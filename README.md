@@ -18,10 +18,11 @@ scientists and engineers turn the problem at hand to a computer readable logical
 
 For this project, I modeled package manager, much like `apt-get` or `pacman` found on various Linux distributions. You
 can read more about my motivation and how I formalized and verified by model in the
-[`dependency_hell.pdf`]() file.
+[`dependency_hell.pdf`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.pdf) file.
 
 The core project is in 
-[`dependency_hell.als`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.als) which is the Alloy Tools plain-text file. I have also included 
+[`dependency_hell.als`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.als) 
+which is the Alloy Tools plain-text file. I have also included 
 Alloy 
 themes which will help you visualize what the package manager is doing. The themes you can create in Alloy aren't super
 complex, so these themes work best on very simple inputs to build an intuition of what's happening.
