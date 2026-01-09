@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge visible="no" attribute="yes"/>
+
+<node>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="Universe"/>
+   <type name="boolean/False"/>
+   <type name="boolean/True"/>
+   <type name="ordering/Ord"/>
+   <type name="seq/Int"/>
+   <set name="$first" type="State"/>
+   <set name="$last" type="State"/>
+   <set name="$packageUpgraded_f" type="Version"/>
+   <set name="$packageUpgraded_l" type="Version"/>
+   <set name="$simpleExample2_A" type="Package"/>
+   <set name="$simpleExample2_Av1" type="Version"/>
+   <set name="$simpleExample2_Av2" type="Version"/>
+   <set name="$simpleExample2_B" type="Package"/>
+   <set name="$simpleExample2_Bv1" type="Version"/>
+   <set name="$simpleExample2_C" type="Package"/>
+   <set name="$simpleExample2_Cv1" type="Version"/>
+   <set name="$simpleExample2_Cv2" type="Version"/>
+   <set name="$simpleExample2_D" type="Package"/>
+   <set name="$simpleExample2_Dv1" type="Version"/>
+   <set name="$simpleExample2_Dv2" type="Version"/>
+   <set name="$upgradePlan_s" type="State"/>
+</node>
+
+<node numberatoms="yes" shape="House">
+   <type name="Package"/>
+</node>
+
+<node visible="no">
+   <type name="Int"/>
+   <type name="boolean/Bool"/>
+</node>
+
+<node visible="yes">
+   <type name="State"/>
+</node>
+
+<node visible="yes" numberatoms="no" label="">
+   <type name="Version"/>
+</node>
+
+<edge attribute="no">
+   <relation name="$next"> <type name="State"/> <type name="State"/> </relation>
+   <relation name="$prev"> <type name="State"/> <type name="State"/> </relation>
+</edge>
+
+<edge attribute="yes">
+   <relation name="target"> <type name="State"/> <type name="Package"/> </relation>
+</edge>
+
+<edge label="">
+   <relation name="dependencies"> <type name="Version"/> <type name="Version"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes">
+   <relation name="installed"> <type name="State"/> <type name="Version"/> </relation>
+   <relation name="locked"> <type name="Version"/> <type name="boolean/Bool"/> </relation>
+   <relation name="ver"> <type name="Version"/> <type name="Int"/> </relation>
+</edge>
+
+<edge visible="no" merge="no" attribute="yes" constraint="no">
+   <relation name="packages"> <type name="Universe"/> <type name="Package"/> </relation>
+</edge>
+
+<edge visible="yes" attribute="yes">
+   <relation name="versions"> <type name="Package"/> <type name="Version"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
