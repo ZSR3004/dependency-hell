@@ -18,7 +18,8 @@ scientists and engineers turn the problem at hand to a computer readable logical
 
 For this project, I modeled package manager, much like `apt-get` or `pacman` found on various Linux distributions. You
 can read more about my motivation and how I formalized and verified by model in the
-[`dependency_hell.pdf`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.pdf) file.
+[`dependency_hell.pdf`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.pdf) file. As vulgar as the
+name is, "Dependency Hell" refers to a well known [problem with package managers](https://en.wikipedia.org/wiki/Dependency_hell).
 
 The core project is in 
 [`dependency_hell.als`](https://github.com/ZSR3004/dependency-hell/blob/main/dependency_hell.als) 
